@@ -74,7 +74,7 @@ if (!isset($_POST["btnProcessCall"]) && !isset($_POST["btnDispatch"]))
 <body>
 <!-- display the incident information passed from logcall.php -->
 <form name="form1" method="post" actions="<?php echo htmlentities($_SERVER['PHP_SELF']); ?> ">
-<table>
+ <table class="ContentStyle">
 	<tr>
 		<td colspan="2">Incident Detail</td>
 	</tr>
@@ -134,7 +134,7 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-<table>
+<table class="ContentStyle">
 	<tr>
 		<td colspan="3">Dispatch Patrolcar Panel</td>
 	</tr>

@@ -36,13 +36,33 @@ $conn->close();
 function validateForm()
 {
 	var x=document.forms["frmLogCall"]["callerName"].value;
+	var y=document.forms["frmLogCall"]["contactNo"].value;
+	var z=document.forms["frmLogCall"]["location"].value;
+	var a=document.forms["frmLogCall"]["incidentDesc"].value;
 	if (x==null || x=="")
 	{
 		alert("Caller Name is required.");
 		return false;
 	}
 	// may add code for validating other inputs
+	else if (y==null || y=="")
+	{
+		alert("Contact No is required.");
+		return false;
+	}
+	// may add code for validating other inputs
+	else if (z==null || z=="")
+	{
+		alert("location is required.");
+		return false;
+	}
+	else if (a==null || a=="")
+	{
+		alert("Description is required.");
+		return false;
+	}
 }
+
 </script>
 </head>
 <body>
